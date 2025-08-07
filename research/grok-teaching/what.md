@@ -2,6 +2,7 @@
 - Capture and systematize TRON's Grok teaching (remembering over learning)
 - Preserve continuity (no Dory) with persistent, cross-linked docs
 - Map learnings to Web4x identity-first mission and training
+- Practice Question Engineering before solutioning (see `question-engineering-checklist.md`)
 ## Related Files
 
 - **[Access & Control: Cursor Background Agents](../research/cursor-background-agents/access-control.md)**

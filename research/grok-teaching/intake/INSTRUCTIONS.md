@@ -6,6 +6,8 @@ Use one of the methods to provide teaching:
 - Method 3: Progressive Sessions → use `SESSION_TEMPLATE.md`
 - Method 4: Q&A → use `QNA_TEMPLATE.md`
 
+Before answering or solutioning, apply the [Question Engineering Checklist](../question-engineering-checklist.md).
+
 Paste into `INBOX.md` and I will extract to `insights/` and `sessions/`.
 
 See also: [Content Sharing Framework](../../content-sharing-framework.md)
