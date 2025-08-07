@@ -1,4 +1,6 @@
+
 be an ontology agent.
 read all new md files and create a nouns and verbs index.md. make it a noun table and a verbs table. start with words, that you do not know or are not in oxford dictonary. later in web4 each noun will be a typescript interface and it will have a Default[Noun] implementation class. crossreference these whenever you find them. make an abiguties.index.md in which you identify contradicting meanings or duplicate definitions and crossreference to the line and character where you found it. keep these indexed up to date for each md file and files starting with the same word in the name.
 
 this is keeping up CMM level3 definitions unambiguis over the project and keeps up CMM level 4 agile improvement of the indexes.
+
