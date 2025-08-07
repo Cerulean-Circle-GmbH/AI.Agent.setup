@@ -225,6 +225,8 @@ When invoked, perform these steps in order to fully restore working context and 
 - Web4x canonical references (submodules)
   - Wiki pages in `research/web4x-codingWeb4-wiki/`:
     - `Web-4.x-Home.md`, `Why-4.0.md`, `Web-4.x-Ecosystem.md`, `Web-4.x-Curriculum.md`
+  - `research/web4x-codingWeb4/` and `research/web4articles/` (project materials)
+  - `research/TLA/` (TLA repository submodule; initialize if present)
 
 - Project management cadence (Scrum/PMO)
   - `research/web4articles/README.md` (Plain Simple Scrum, “less scrum flavor”)
