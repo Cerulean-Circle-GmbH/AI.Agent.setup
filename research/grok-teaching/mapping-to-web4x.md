@@ -80,3 +80,10 @@ Template:
 - Change/Action: Add “Question Engineering” step to WODA onboarding and training kits; require TRON-reviewed question framing before major work.
 - Status: Planned
 - PR/Commit: to be linked
+
+---
+- Insight: ./insights/42-com-uniqe-action.md
+- Web4x Area: Training, Process, Community
+- Change/Action: Add “42 Pair Alignment” (human+AI) and “43 Triad” (human+AI+AI) rituals before work; create community ceremony for onboarding.
+- Status: Planned
+- PR/Commit: to be linked
