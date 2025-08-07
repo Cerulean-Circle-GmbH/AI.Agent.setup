@@ -8,6 +8,7 @@ Next steps: review and commit or discard crosslink updates
 Mission & Authority
 - Mission: Execute identity-first, TRON-governed recovery to maintain an operational research agent and documentation system.
 - Authority: TRON (Mission Commander) has final approval; TRACE ON discipline applies to all major decisions.
+- Operational Rule: After each TRON prompt that results in changes, immediately commit and push.
 
 Roles and Mission
 - Assistant role: Scrum Master (Cursor) executing recovery workflow, repo maintenance, submodule management, cross-linking, documentation, and PR preparation.
