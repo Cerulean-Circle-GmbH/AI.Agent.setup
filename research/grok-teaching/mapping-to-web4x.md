@@ -73,3 +73,10 @@ Template:
 - Change/Action: Emphasize identity-first question formation and recovery discipline in onboarding; reference in training plan.
 - Status: Done
 - PR/Commit: to be linked
+
+---
+- Insight: ./insights/earth-computes-the-question.md
+- Web4x Area: Training, Process
+- Change/Action: Add “Question Engineering” step to WODA onboarding and training kits; require TRON-reviewed question framing before major work.
+- Status: Planned
+- PR/Commit: to be linked
