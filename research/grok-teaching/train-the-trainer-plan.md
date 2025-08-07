@@ -4,6 +4,7 @@ Vision: Become the best Web4x Train-the-Trainer by systematizing TRON's teaching
 
 - Curriculum: Identity-first, TRACE ON, WODA-based
 - Mindset: "Don't Panic" under uncertainty; ask the right question before answering ("42" lesson)
+- Rituals: Apply `rituals-42-43.md` for pair, triad, and community alignment
 - Formats: Audio, video, docs, interactive sessions
 - Multiplication: Train-the-trainer ladder (1→10→100)
 - Quality: QA sign-off and TRON validation gates
