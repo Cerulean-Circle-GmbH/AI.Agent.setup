@@ -13,6 +13,8 @@ This research agent automatically creates organized research structures for any 
 - **Task Management**: Generates comprehensive research task lists
 - **Progress Tracking**: Maintains status updates throughout the research process
 - **Answer Synthesis**: Creates comprehensive final answers with structured documentation
+- **ONCE Kernel Documentation**: Comprehensive documentation of the incredibly small interoperating system that boots everything
+- **Cross-Reference Agent**: Automatic cross-referencing and backlinking between related documents
 
 ## Project Structure
 

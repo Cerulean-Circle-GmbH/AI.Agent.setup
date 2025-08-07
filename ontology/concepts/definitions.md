@@ -58,6 +58,11 @@
 - System initialization sequences
 - Universal startup protocols
 
+## Related Files
+
+- **[System Glossary](../ontology/Glossary.md)**
+- **[System Ontology](../ontology/Ontology.md)**
+- **[ONCE Kernel - The Universal Bootstrap System](../ontology/concepts/ONCE-kernel.md)**
 ---
 
 *This document serves as the central repository for core concept definitions within the system ontology.*

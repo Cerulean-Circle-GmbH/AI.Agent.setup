@@ -65,6 +65,11 @@ The ONCE Kernel achieves its incredible small size through:
 - **Microkernel Architecture**: Minimal kernel design patterns
 - **Universal Object Model**: Everything as a bootable object
 
+## Related Files
+
+- **[System Glossary](../ontology/Glossary.md)**
+- **[System Ontology](../ontology/Ontology.md)**
+- **[Core Concept Definitions](../ontology/concepts/definitions.md)**
 ---
 
 *Note: ONCE and ONCE Kernel are interchangeable terms. The "Kernel" suffix emphasizes its role as the core interoperating system, similar to how "Linux kernel" describes the core of Linux systems.*
