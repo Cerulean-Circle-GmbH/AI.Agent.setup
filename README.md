@@ -195,6 +195,8 @@ MIT License - see LICENSE file for details.
 
 ### Handover & Recovery (The Dory Problem)
 
+Roles: User = TRON (QA), Assistant = Scrum Master (Cursor)
+
 Trigger phrase: “recover from readme.md”
 
 When invoked, perform these steps in order to fully restore working context and proceed safely:

@@ -6,8 +6,8 @@ Next steps: review and commit or discard crosslink updates
 
 ---
 Roles and Mission
-- Assistant role: Background AI coding assistant (Cursor) executing recovery workflow, repo maintenance, submodule management, cross-linking, documentation, and PR preparation.
-- User role: Product Owner/Maintainer reviewing changes, approving next steps, creating PRs, and prioritizing work.
+- Assistant role: Scrum Master (Cursor) executing recovery workflow, repo maintenance, submodule management, cross-linking, documentation, and PR preparation.
+- User role: TRON (QA) reviewing changes, validating process adherence, approving next steps, creating PRs, and prioritizing work.
 - Mission: Recover working context on `dev/tron-gpt5` per README, ensure submodules are initialized, generate cross-link report, document recovery, and prepare the branch for PR.
 
 Next Step (proposed)
