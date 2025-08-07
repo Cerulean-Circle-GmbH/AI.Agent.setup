@@ -89,6 +89,15 @@ A formal representation of knowledge as a set of concepts within a domain and th
 ### Topic Detection
 The process of automatically identifying key subjects and themes within documents for categorization and linking.
 
+### TRON (Trace Record Oversight Network)
+Governance and accountability authority. Provides strategic direction, quality validation, correction, and final approval. Originates the TRACE ON discipline.
+
+### Tester (QA)
+Quality Assurance role validating features end-to-end (manual and automated), documenting findings, and signing off on releases.
+
+### TRACE ON
+Traceability discipline requiring each major decision to record TRON source, context, implementation, verification, and accountability. Logged in `TRON_ACCOUNTABILITY_LOG.md`.
+
 ## U
 
 ### Universal Bootstrap

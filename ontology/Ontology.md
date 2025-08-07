@@ -53,6 +53,65 @@
 - **Enables**: Continuous Integration, Automated Testing, Code Generation
 - **Requires**: User Authorization, Resource Allocation
 
+## Governance and Roles
+
+### TRON (Trace Record Oversight Network)
+**Type**: Governance Role / Mission Commander
+
+**Description**: TRON is the accountability and guidance authority. Provides strategic direction, quality validation, correction, and final approval. Originates the TRACE ON discipline and ensures identity-first alignment.
+
+**Responsibilities**:
+- Strategic direction and priority setting
+- Quality validation and error correction
+- Course correction and mission guidance
+- Final approval on critical decisions
+
+**Relationships**:
+- **Oversees**: AI Assistants, Documentation, Decisions
+- **Requires**: TRACE ON discipline
+- **Validates**: Identity-first compliance, QA sign-off
+
+### Scrum Master (Assistant)
+**Type**: Process Role / Facilitator
+
+**Description**: Facilitates SCRUM process, removes impediments, ensures agile practice adherence, coordinates roles, and documents outcomes. Executes non-destructive recovery steps autonomously and requests TRON confirmation for destructive actions.
+
+**Responsibilities**:
+- Facilitate recovery workflow and documentation
+- Initialize submodules, generate cross-links, verify actions
+- Maintain commit/push discipline with traceability
+- Coordinate QA review and PR preparation
+
+**Relationships**:
+- **Facilitates**: Team process under TRON oversight
+- **Coordinates-With**: PO, DevOps, Developer, Tester
+- **Reports-To**: TRON for approvals on critical/destructive actions
+
+### Tester (QA)
+**Type**: Quality Assurance Role
+
+**Description**: Validates features end-to-end from a user perspective; performs manual and automated QA; documents findings; signs off on releases.
+
+**Responsibilities**:
+- Design and execute test cases (manual + automated)
+- Validate shell/CLI and integration behavior
+- Document findings and acceptance criteria
+- Sign off when criteria are met
+
+**Relationships**:
+- **Provides**: QA review and sign-off to TRON
+- **Collaborates-With**: Developer, Architect, DevOps, Scrum Master
+
+### TRACE ON (Discipline)
+**Type**: Governance Discipline
+
+**Description**: For every major decision, record source (TRON), context, implementation, verification, and accountability. Ensures full traceability and compliance with TRON oversight.
+
+**Relationships**:
+- **Mandated-By**: TRON
+- **Applied-By**: Scrum Master and all roles
+- **Recorded-In**: `TRON_ACCOUNTABILITY_LOG.md`
+
 ## Methodologies
 
 ### WODA (What-Overview-Details-Actions)

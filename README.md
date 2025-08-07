@@ -195,7 +195,7 @@ MIT License - see LICENSE file for details.
 
 ### Handover & Recovery (The Dory Problem)
 
-Roles: User = TRON (QA), Assistant = Scrum Master (Cursor)
+Roles: User = TRON (QA; Mission Commander), Assistant = Scrum Master (Cursor; Facilitator/Implementer)
 
 Trigger phrase: “recover from readme.md”
 
@@ -205,10 +205,10 @@ When invoked, perform these steps in order to fully restore working context and 
   - Apply the checklist from `IDENTITY_INTEGRATION_GUIDE.md` to all actions (Foundation First, User Sovereignty, Permanence, Privacy, Universal Access, Biblical Alignment).
 
 - Repository and branch
-  - Ensure branch is `dev/tron` and submodules are initialized and up to date.
+  - Ensure branch is `dev/tron-gpt5` (current GPT-5 iteration) or `dev/tron` (baseline), and submodules are initialized and up to date.
   - Commands:
     ```bash
-    git checkout dev/tron || true
+    git checkout dev/tron-gpt5 || git checkout dev/tron || true
     git submodule update --init --recursive --progress
     ```
 
@@ -232,7 +232,7 @@ When invoked, perform these steps in order to fully restore working context and 
   - `research/web4articles/scrum.pmo/roles/*/process.md` (role duties)
   - `research/web4articles/scrum.pmo/sprints/sprint-0/planning.md` (initial plan)
 
-- TRACE ON discipline
+- TRACE ON discipline (TRON oversight)
   - For each major decision, record TRON source, context, implementation, verification, and accountability. Append to `TRON_ACCOUNTABILITY_LOG.md` as needed.
 
 - WODA pipeline
@@ -254,7 +254,7 @@ When invoked, perform these steps in order to fully restore working context and 
 - Recovery summary (optional but recommended)
   - Create or append `recovery.md` with: timestamp, branch, submodule status, docs read, pending actions, risks, and next steps.
 
-Execution rule: Do not delete or move files without explicit user confirmation; verify all scripted actions and document results.
+Execution rule: Non-destructive steps may be executed autonomously. Any destructive action (delete/move) requires explicit TRON confirmation. Always verify outcomes and document results.
 
 ## Related Files
 
