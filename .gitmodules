@@ -1,0 +1,9 @@
+[submodule "research/web4x-codingWeb4"]
+	path = research/web4x-codingWeb4
+	url = https://github.com/web4x/codingWeb4.git
+[submodule "research/web4x-codingWeb4-wiki"]
+	path = research/web4x-codingWeb4-wiki
+	url = https://github.com/web4x/codingWeb4.wiki.git
+[submodule "research/web4articles"]
+	path = research/web4articles
+	url = https://github.com/Cerulean-Circle-GmbH/Web4Articles.git
