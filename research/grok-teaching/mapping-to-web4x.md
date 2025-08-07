@@ -66,3 +66,10 @@ Template:
 - **[Web4x Identity Foundation: The Primordial Layer](../research/web4x-identity-foundation.md)**
 - **[Web4x Ontology Maintenance Framework](../research/web4x-ontology-maintenance.md)**
 - **[Web4x Ontology & Glossary  ](../research/web4x-ontology.md)**
+
+---
+- Insight: ./insights/dont-panic-and-42.md
+- Web4x Area: Identity, Process, Training
+- Change/Action: Emphasize identity-first question formation and recovery discipline in onboarding; reference in training plan.
+- Status: Done
+- PR/Commit: to be linked
