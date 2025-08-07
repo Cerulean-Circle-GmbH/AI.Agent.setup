@@ -1,14 +1,43 @@
-# Web4x Ontology & Glossary
+# Web4x Ontology & Glossary  
 ## CMM Level 3 Terminology Framework
+### Identity-First Architecture
 
-*Maintained for consistency and precise communication in Web4x development*
+*"At the end of days every one gets an unspeakable name engraved in a white stone" - Revelation 2:17*
+
+**FOUNDATIONAL PRINCIPLE:** Identity is the primordial foundation from which all Web4x concepts derive. Every term, system, and process must be understood in relation to the identity-first architecture that reflects eternal patterns of divine naming and recognition.
 
 ---
 
-## FOUNDATIONAL CONCEPTS
+## I. PRIMORDIAL FOUNDATION: IDENTITY
+
+### Identity (Root Concept)
+**CMM Level 3 Definition:** The foundational principle that establishes unique, permanent, and self-sovereign recognition of entities, implemented through DAL-Identity as the technical manifestation of ancient spiritual principles about divine naming and eternal recognition.
+
+**Context:** Web4x primordial foundation
+**Biblical Foundation:** Revelation 2:17 "white stone with new name"
+**Etymology:** From Latin "identitas" (sameness, unity) + divine naming principles
+**Technical Implementation:** DAL-Identity, DIDs, Self-Sovereign Identity
+**Relationships:**
+- **Is-Foundation-Of:** All Web4x systems, Digital Twins, WebObjects
+- **Implements:** Divine naming principles, Eternal recognition patterns
+- **Enables:** Self-sovereignty, Consent management, Ownership control
+- **Transcends:** Language barriers, Cultural boundaries, Temporal limitations
+
+### DAL Identity
+**CMM Level 3 Definition:** Decentralized Access Layer Identity system providing self-sovereign identity control where individuals own and manage their digital identity independently of centralized authorities, implemented in Web4x through DAL Identity.
+
+**Context:** Web4x identity infrastructure
+**Biblical Parallel:** "Your identity under your control" (technical sovereignty)
+**Relationships:**
+- **Implements:** Identity (root concept), Self-Sovereign Identity
+- **Enables:** Digital ownership, Consent withdrawal, Permanent identity
+- **Uses:** Decentralized Identifiers (DIDs), Verifiable Credentials
+- **Protects:** Unspeakable name aspects, Personal identity attributes
+
+## II. DERIVATIVE CONCEPTS (Flowing from Identity)
 
 ### Paradigm Shift
-**CMM Level 3 Definition:** A fundamental change in HOW a capability is executed, without changing WHAT capability is being executed, resulting in competitive advantage through adoption of previously unavailable methods.
+**CMM Level 3 Definition:** A fundamental change in HOW a capability is executed, without changing WHAT capability is being executed, resulting in competitive advantage through adoption of previously unavailable methods. In Web4x context: the shift from technology-first to identity-first architecture.
 
 **Context:** Web4x philosophical foundation
 **Etymology:** From Thomas Kuhn's scientific revolutions, applied to technological evolution
