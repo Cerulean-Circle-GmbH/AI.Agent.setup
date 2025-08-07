@@ -7,3 +7,6 @@
 [submodule "research/web4articles"]
 	path = research/web4articles
 	url = https://github.com/Cerulean-Circle-GmbH/Web4Articles.git
+[submodule "research/TLA"]
+	path = research/TLA
+	url = https://github.com/Cerulean-Circle-GmbH/TLA
