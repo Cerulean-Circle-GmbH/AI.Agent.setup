@@ -78,8 +78,8 @@ These files are designed to be:
 ## External Integration
 
 To integrate with external documentation systems, copy these files to:
-- `/Users/Shared/EAMD.ucp/Documentation/Ontology.md`
-- `/Users/Shared/EAMD.ucp/Documentation/Glossary.md`
+- `EAMD.ucp/Documentation/Ontology.md`
+- `EAMD.ucp/Documentation/Glossary.md`
 
 Note: The system cannot directly write to external directories outside the workspace.
 

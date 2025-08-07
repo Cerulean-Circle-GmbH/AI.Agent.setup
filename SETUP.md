@@ -10,7 +10,7 @@ The Python version is ready to use immediately:
 
 ```bash
 # Navigate to the AI.Agent.setup directory
-cd /Users/Shared/EAMD.ucp/md-wiki/AI.Agent.setup
+cd EAMD.ucp/md-wiki/AI.Agent.setup
 
 # Run the research agent
 python3 research_agent.py

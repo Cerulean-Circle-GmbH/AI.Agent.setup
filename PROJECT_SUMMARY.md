@@ -78,13 +78,13 @@ A complete research agent setup with **Web4x identity-first architecture integra
 
 ### Quick Start (Python)
 ```bash
-cd /Users/Shared/EAMD.ucp/md-wiki/AI.Agent.setup
+cd EAMD.ucp/md-wiki/AI.Agent.setup
 python3 research_agent.py
 ```
 
 ### Full Setup (Node.js)
 ```bash
-cd /Users/Shared/EAMD.ucp/md-wiki/AI.Agent.setup
+cd EAMD.ucp/md-wiki/AI.Agent.setup
 npm install
 npm start
 ```
