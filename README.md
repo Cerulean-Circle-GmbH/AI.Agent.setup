@@ -193,10 +193,71 @@ MIT License - see LICENSE file for details.
 3. Test thoroughly before submitting
 4. Update README for new features
 
+### Handover & Recovery (The Dory Problem)
+
+Trigger phrase: “recover from readme.md”
+
+When invoked, perform these steps in order to fully restore working context and proceed safely:
+
+- Identity-first gates
+  - Apply the checklist from `IDENTITY_INTEGRATION_GUIDE.md` to all actions (Foundation First, User Sovereignty, Permanence, Privacy, Universal Access, Biblical Alignment).
+
+- Repository and branch
+  - Ensure branch is `dev/tron` and submodules are initialized and up to date.
+  - Commands:
+    ```bash
+    git checkout dev/tron || true
+    git submodule update --init --recursive --progress
+    ```
+
+- Read core context (this file first)
+  - `README.md` (this file) and `PROJECT_SUMMARY.md`
+  - TRON governance: `TRON_ACCOUNTABILITY_LOG.md`, `MISSION_CRITICAL_PROJECT_MANAGEMENT.md`
+  - Identity anchor: `IDENTITY_INTEGRATION_GUIDE.md`, `research/web4x-identity-foundation.md`
+
+- GROK learning context (for teaching method and memory constraints)
+  - `research/grok-learning-context.md`
+  - `research/grok-teaching-research-analysis.md`
+  - `research/content-sharing-framework.md`
+
+- Web4x canonical references (submodules)
+  - Wiki pages in `research/web4x-codingWeb4-wiki/`:
+    - `Web-4.x-Home.md`, `Why-4.0.md`, `Web-4.x-Ecosystem.md`, `Web-4.x-Curriculum.md`
+
+- Project management cadence (Scrum/PMO)
+  - `research/web4articles/README.md` (Plain Simple Scrum, “less scrum flavor”)
+  - `research/web4articles/wiki/Ontology.md` (SCRUM/PMO term definitions)
+  - `research/web4articles/scrum.pmo/roles/*/process.md` (role duties)
+  - `research/web4articles/scrum.pmo/sprints/sprint-0/planning.md` (initial plan)
+
+- TRACE ON discipline
+  - For each major decision, record TRON source, context, implementation, verification, and accountability. Append to `TRON_ACCOUNTABILITY_LOG.md` as needed.
+
+- WODA pipeline
+  - For any new question, generate a research topic (API via `src/index.js` or Python via `research_agent.py`), then fill What/Overview/Details/Actions and synthesize `answer.md`.
+
+- Cross-linking
+  - Generate or refresh cross-links and reports:
+    ```bash
+    python3 crosslink_agent.py --research-dir research --report
+    ```
+
+- Health check / API (optional)
+  - Start the API server for endpoints `/health`, `/research`:
+    ```bash
+    npm install
+    npm start
+    ```
+
+- Recovery summary (optional but recommended)
+  - Create or append `recovery.md` with: timestamp, branch, submodule status, docs read, pending actions, risks, and next steps.
+
+Execution rule: Do not delete or move files without explicit user confirmation; verify all scripted actions and document results.
+
 ## Related Files
 
 - **[Research Agent Project Summary](PROJECT_SUMMARY.md)**
-- **[Research Agent Setup Guide](SETUP.md)**
+- **[Research Agent Setup](SETUP.md)**
 - **[Research Agent Definition](research.agent.md)**
 - **[Actions](research/can-cursor-automate-the-creation/actions.md)**
 - **[Can Cursor Automate The Creation](research/can-cursor-automate-the-creation/can-cursor-automate-the-creation.md)**
