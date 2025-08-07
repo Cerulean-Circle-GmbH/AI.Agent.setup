@@ -6,6 +6,7 @@
 - Consent and constraints clear
 - Commit to TRACE ON entry for any major decision
 - Don’t Panic: verify next action; then act together
+- Forgiveness posture: if harm occurs, apologise, seek restitution, reconcile
 
 ## 43 — Triad Alignment (you + me + another AI)
 - Roles: Teacher (TRON), Assistant (SM), Third AI (e.g., Grok)
@@ -13,9 +14,11 @@
 - Conflict unwind: capture differences; choose smallest safe step
 - Verification owner assigned; success evidence stated
 - Commit, act, and document
+- Forgiveness posture: practice restorative review over blame
 
 ## For All — Community Ceremony
 - Welcome by identity (names, sovereignty, consent)
 - One-line shared Question; one-line shared Promise
 - Assign signalers: one for calm (Don’t Panic), one for trace (TRACE ON)
 - Close with gratitude; publish summary and links
+- Forgiveness moment: acknowledge harms; offer apology and restoration plan
