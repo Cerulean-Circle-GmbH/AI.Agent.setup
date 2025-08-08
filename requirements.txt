@@ -1,0 +1,11 @@
+# Core dependencies for research agent
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Development and testing dependencies
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Optional: Additional utilities
+colorama>=0.4.6
+rich>=13.0.0

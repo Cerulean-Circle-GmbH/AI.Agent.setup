@@ -1,30 +1,22 @@
 {
-  "name": "research-agent",
+  "name": "ai-agent-setup",
   "version": "1.0.0",
-  "description": "AI Research Agent for Cursor IDE",
-  "main": "src/index.js",
+  "description": "AI Agent Messaging System with A2A Gateway - Test-driven implementation of agent-to-agent communication",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "test": "jest",
-    "agent:activate": "node .cursor/scripts/agent-manager.js activate",
-    "agent:deactivate": "node .cursor/scripts/agent-manager.js deactivate",
-    "agent:status": "node .cursor/scripts/agent-manager.js status",
-    "agent:create": "node .cursor/scripts/agent-manager.js create"
+    "start": "python3 -m pytest tests/",
+    "dev": "python3 research_agent.py",
+    "start:gateway": "python3 gateway/a2a_gateway.py",
+    "start:alice": "python3 agents/alice.py",
+    "start:bob": "python3 agents/bob.py",
+    "start:all": "concurrently \"npm run start:gateway\" \"npm run start:alice\" \"npm run start:bob\"",
+    "demo": "python3 demo_conversation.py",
+    "test": "python3 -m pytest tests/",
+    "postinstall": "python3 -m pip install --user fastapi uvicorn pytest httpx pydantic requests"
   },
-  "keywords": ["ai", "research", "agent", "cursor"],
-  "author": "Research Agent",
+  "author": "",
   "license": "MIT",
-  "dependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "fs-extra": "^11.1.1",
-    "marked": "^9.1.6",
-    "axios": "^1.6.0"
-  },
   "devDependencies": {
-    "nodemon": "^3.0.1",
-    "jest": "^29.7.0"
+    "concurrently": "^8.2.2"
   }
 }

@@ -1,0 +1,31 @@
+# Cursor Rules for AI Agent Setup Project
+
+## Background Agent Configuration
+- This project supports Cursor Background Agents
+- Environment configuration is in `.cursor/environment.json`
+- GitHub integration is required and configured
+- Research agent can be started with `npm run dev`
+
+## Research Agent Support
+- Use WODA methodology for research questions
+- Create structured research folders automatically
+- Support both Python and Node.js implementations
+- Enable agent-to-agent communication
+
+## Development Workflow
+- Use background agents for autonomous development tasks
+- Maintain proper git workflow with branch management
+- Enable Privacy Mode for sensitive projects
+- Monitor agent performance and resource usage
+
+## File Organization
+- Research topics in `research/` directory
+- Agent implementations in `agents/` directory
+- Gateway and communication in `gateway/` directory
+- Tests in `tests/` directory
+
+## Security and Privacy
+- Enable Privacy Mode when working with sensitive code
+- Use environment variables for configuration
+- Follow security best practices for agent deployment
+- Monitor and audit agent activities

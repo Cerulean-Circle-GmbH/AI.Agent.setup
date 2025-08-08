@@ -1,0 +1,19 @@
+{
+  "snapshot": "POPULATED_FROM_SETTINGS",
+  "install": "npm install && pip install -r requirements.txt",
+  "start": "echo 'Environment ready for background agent'",
+  "terminals": [
+    {
+      "name": "Development Server",
+      "command": "npm run dev"
+    },
+    {
+      "name": "Research Agent",
+      "command": "python3 research_agent.py"
+    },
+    {
+      "name": "Test Runner",
+      "command": "npm test"
+    }
+  ]
+}
