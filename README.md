@@ -1,192 +1,118 @@
-# Research Agent Setup
+# AI Agent Messaging System with A2A Gateway
 
-A Cursor-integrated research agent that implements the WODA methodology (What, Overview, Details, Actions) for structured research projects.
+A test-driven implementation of agent-to-agent communication using Google's A2A protocol principles, featuring a central Gateway server that manages agent registration, task routing, and message storage.
 
-## Overview
+## Architecture
 
-This research agent automatically creates organized research structures for any question, following a systematic approach to information gathering and analysis.
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   Alice Agent   │    │  A2A Gateway    │    │   Bob Agent     │
+│   (Port 8001)   │◄──►│   (Port 8000)   │◄──►│   (Port 8002)   │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+```
 
-## Features
-
-- **WODA Methodology**: Structured research following What, Overview, Details, Actions framework
-- **Automatic File Generation**: Creates organized folder structures for each research topic
-- **Task Management**: Generates comprehensive research task lists
-- **Progress Tracking**: Maintains status updates throughout the research process
-- **Answer Synthesis**: Creates comprehensive final answers with structured documentation
-
-## Project Structure
+## Folder Structure
 
 ```
 AI.Agent.setup/
-├── src/
-│   └── index.js              # Main research agent server
-├── research/                 # Generated research folders
-├── package.json              # Node.js dependencies
-├── .cursorrules             # Cursor IDE integration rules
-├── README.md               # This file
-└── research.agent.md       # Original agent specification
+│
+├── gateway/              # A2A Gateway server
+│   └── a2a_gateway.py    # Central message broker
+│
+├── agents/               # All agent apps
+│   ├── alice.py          # Alice's FastAPI app
+│   ├── bob.py            # Bob's FastAPI app
+│   ├── alice_prompt.md   # Alice's identity and instructions
+│   └── bob_prompt.md     # Bob's identity and instructions
+│
+├── tests/                # All test files
+│   ├── test_agents_messaging.py
+│   └── test_agent.py
+│
+├── shared/               # Shared resources/utilities
+│   └── message_store.py  # Legacy shared store (deprecated)
+│
+├── README.md             # Project documentation
+├── package.json          # NPM scripts and dependencies
+└── ...                   # Other project files
 ```
 
-## Installation
+## Getting Started
 
-1. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
+### 1. Install Dependencies
+```bash
+npm install
+```
 
-2. **Start the Research Agent**:
-   ```bash
-   npm start
-   ```
+### 2. Start the A2A Gateway Server
+```bash
+npm run start:gateway
+```
+This starts the central Gateway server on `http://localhost:8000`
 
-3. **Development Mode**:
-   ```bash
-   npm run dev
-   ```
+### 3. Start the Agents
+In separate terminals:
+```bash
+# Terminal 1: Start Alice
+npm run start:alice
+
+# Terminal 2: Start Bob  
+npm run start:bob
+```
+
+Or start all services at once:
+```bash
+npm run start:all
+```
+
+### 4. Run Tests
+```bash
+npm run start  # Runs pytest on tests/
+```
 
 ## API Endpoints
 
-### Create New Research
-```bash
-POST /research
-Content-Type: application/json
+### Gateway (Port 8000)
+- `GET /health` - Health check
+- `GET /agents` - List registered agents
+- `POST /agents/register` - Register an agent
+- `POST /tasks` - Submit a task
+- `GET /tasks/{task_id}` - Get task status
+- `POST /messages` - Send a message
+- `GET /messages?receiver={name}` - Get messages for receiver
 
-{
-  "question": "Your research question here"
-}
-```
+### Alice (Port 8001)
+- `POST /send` - Send message through Gateway
+- `GET /messages?receiver={name}` - Get messages from Gateway
+- `GET /health` - Health check
 
-### Get Research Status
-```bash
-GET /research/:topicName
-```
+### Bob (Port 8002)
+- `POST /send` - Send message through Gateway
+- `GET /messages?receiver={name}` - Get messages from Gateway
+- `GET /health` - Health check
+- `GET /agent-card` - Bob's capabilities
+- `POST /tasks` - Handle tasks (echo, reverse)
 
-### Update Research
-```bash
-PUT /research/:topicName
-Content-Type: application/json
+## Agent Communication Flow
 
-{
-  "updates": {
-    "what.md": "Updated content...",
-    "overview.md": "Updated content..."
-  }
-}
-```
+1. **Registration**: Agents register with the Gateway on startup
+2. **Messaging**: Agents send/receive messages through the Gateway
+3. **Task Execution**: Background agents can receive and execute tasks
+4. **Discovery**: Agents can discover each other's capabilities
 
-### Create Final Answer
-```bash
-POST /research/:topicName/answer
-Content-Type: application/json
+## Integration with Cursor
 
-{
-  "answer": {
-    "question": "Original question",
-    "summary": "Brief summary",
-    "details": "Detailed answer",
-    "actions": "Recommended actions",
-    "references": "Sources and references"
-  }
-}
-```
+This system can be integrated with Cursor's active chat and background agents by:
+- Using the Gateway as a message broker between active and background agents
+- Implementing MCP tools for the active chat to interact with the Gateway
+- Following the A2A protocol for standardized agent communication
 
-### List All Research
-```bash
-GET /research
-```
+## Testing
 
-### Health Check
-```bash
-GET /health
-```
+The test suite verifies:
+- Agent registration with the Gateway
+- Message exchange between Alice and Bob
+- Task execution capabilities
+- API endpoint functionality
 
-## WODA Methodology
-
-### What
-- Define the topic and scope
-- Identify core concepts
-- Establish boundaries
-
-### Overview
-- Document current knowledge
-- Identify research gaps
-- Plan investigation approach
-
-### Details
-- Collect research findings
-- Document technical details
-- Gather references and sources
-
-### Actions
-- Derive actionable insights
-- Create implementation steps
-- Plan next actions
-
-## Research File Structure
-
-For each research topic, the agent creates:
-
-```
-research/
-└── topic-name/
-    ├── topic-name.md          # Main topic file with question
-    ├── research-tasks.md      # Comprehensive task list
-    ├── what.md               # WODA: What
-    ├── overview.md           # WODA: Overview  
-    ├── details.md            # WODA: Details
-    ├── actions.md            # WODA: Actions
-    └── answer.md             # Final comprehensive answer
-```
-
-## Cursor Integration
-
-The `.cursorrules` file configures Cursor IDE to:
-- Recognize research questions
-- Automatically create research structures
-- Follow WODA methodology
-- Maintain organized documentation
-
-## Usage Example
-
-1. **Ask a Research Question**:
-   ```
-   "Can Cursor automate backend agent creation?"
-   ```
-
-2. **Agent Creates Structure**:
-   - Generates topic name: `cursor-automate-backend-agent-creation`
-   - Creates research folder with WODA files
-   - Generates research task list
-
-3. **Research Process**:
-   - Fill in WODA framework files
-   - Collect information and references
-   - Update progress regularly
-
-4. **Final Answer**:
-   - Synthesize findings into answer.md
-   - Update main topic file with links
-   - Mark research as completed
-
-## Development
-
-### Adding New Features
-- Extend the `ResearchAgent` class in `src/index.js`
-- Add new API endpoints as needed
-- Update `.cursorrules` for new behaviors
-
-### Testing
-```bash
-npm test
-```
-
-## License
-
-MIT License - see LICENSE file for details.
-
-## Contributing
-
-1. Follow the WODA methodology
-2. Maintain clear documentation
-3. Test thoroughly before submitting
-4. Update README for new features
+All tests should pass when the Gateway and agents are running.

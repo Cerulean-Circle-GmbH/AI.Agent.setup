@@ -9,3 +9,4 @@ pytest-asyncio>=0.21.0
 # Optional: Additional utilities
 colorama>=0.4.6
 rich>=13.0.0
+

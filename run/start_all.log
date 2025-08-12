@@ -1,0 +1,55 @@
+
+> ai-agent-setup@1.0.0 start:all
+> concurrently "npm run start:gateway" "npm run start:alice" "npm run start:bob"
+
+[0] 
+[0] > ai-agent-setup@1.0.0 start:gateway
+[0] > python3 gateway/a2a_gateway.py
+[0] 
+[1] 
+[1] > ai-agent-setup@1.0.0 start:alice
+[1] > python3 agents/alice.py
+[1] 
+[2] 
+[2] > ai-agent-setup@1.0.0 start:bob
+[2] > python3 agents/bob.py
+[2] 
+[1] /home/devuser/AI.Agent.setup/agents/alice.py:13: DeprecationWarning: 
+[1]         on_event is deprecated, use lifespan event handlers instead.
+[1] 
+[1]         Read more about it in the
+[1]         [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+[1]         
+[1]   @app.on_event("startup")
+[2] /home/devuser/AI.Agent.setup/agents/bob.py:15: DeprecationWarning: 
+[2]         on_event is deprecated, use lifespan event handlers instead.
+[2] 
+[2]         Read more about it in the
+[2]         [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+[2]         
+[2]   @app.on_event("startup")
+[0] INFO:     Started server process [97571]
+[0] INFO:     Waiting for application startup.
+[0] INFO:     Application startup complete.
+[0] INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+[1] INFO:     Started server process [97572]
+[1] INFO:     Waiting for application startup.
+[2] INFO:     Started server process [97574]
+[2] INFO:     Waiting for application startup.
+[0] INFO:     127.0.0.1:34534 - "POST /agents/register HTTP/1.1" 200 OK
+[0] INFO:     127.0.0.1:34536 - "POST /agents/register HTTP/1.1" 200 OK
+[2] INFO:     Application startup complete.
+[2] INFO:     Uvicorn running on http://0.0.0.0:8002 (Press CTRL+C to quit)
+[1] INFO:     Application startup complete.
+[1] INFO:     Uvicorn running on http://0.0.0.0:8001 (Press CTRL+C to quit)
+[2] ✅ Bob registered with Gateway at http://localhost:8000
+[2] INFO:     127.0.0.1:52292 - "GET /health HTTP/1.1" 200 OK
+[0] INFO:     127.0.0.1:42590 - "GET /health HTTP/1.1" 200 OK
+[0] INFO:     127.0.0.1:37578 - "GET /health HTTP/1.1" 200 OK
+[0] INFO:     127.0.0.1:42472 - "GET /agents HTTP/1.1" 200 OK
+[1] ✅ Alice registered with Gateway at http://localhost:8000
+[1] INFO:     127.0.0.1:41734 - "GET /health HTTP/1.1" 200 OK
+[0] INFO:     127.0.0.1:56414 - "GET /agents HTTP/1.1" 200 OK
+[0] npm run start:gateway exited with code SIGHUP
+[2] npm run start:bob exited with code SIGHUP
+[1] npm run start:alice exited with code SIGHUP

@@ -1,0 +1,6 @@
+{"sender": "Alice", "receiver": "Bob", "content": "33", "_remote_addr": "127.0.0.1", "_logged_at": "2025-08-08T15:05:11.650698Z"}
+{"sender": "Alice", "receiver": "Bob", "content": "Hello World from Alice!", "_remote_addr": "127.0.0.1", "_logged_at": "2025-08-12T08:13:20.398849Z"}
+{"sender": "Bob", "receiver": "Alice", "content": "📝 Message received and notification created. Bob will process this in chat and respond shortly.", "_remote_addr": "127.0.0.1", "_logged_at": "2025-08-12T08:13:20.512924Z"}
+{"sender": "Bob", "receiver": "Alice", "content": "📝 Message received and notification created. Bob will process this in chat and respond shortly.", "_remote_addr": "127.0.0.1", "_logged_at": "2025-08-12T08:28:31.159260Z"}
+{"sender": "Alice", "receiver": "Bob", "content": "Hello Bob - please reply pong", "_remote_addr": "127.0.0.1", "_logged_at": "2025-08-12T08:28:38.164169Z"}
+{"sender": "Bob", "receiver": "Alice", "content": "📝 Message received and notification created. Bob will process this in chat and respond shortly.", "_remote_addr": "127.0.0.1", "_logged_at": "2025-08-12T08:30:38.642773Z"}
