@@ -5,3 +5,4 @@
 [2025-08-12 08:30:38] 📝 Created notification file: bob_notification_Bob__.md
 [2025-08-12 08:30:38] ✅ Notification created for Bob to process in chat: bob_notification_Bob__.md
 [2025-08-12 08:30:38] ✅ Sent to Alice (via Bob /send): 📝 Message received and notification created. Bob w...
+[2025-08-12 08:38:25] ❌ Error getting messages: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /messages?receiver=Bob (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7a577f2dc4f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
